@@ -6,7 +6,7 @@ function App() {
     <>
       <header>
         <div className='left-nav'></div>
-        <div className='center-nav'><img alt="The Bible Brief Logo" src='../public/biblebrief-logo.jpg'/></div>
+        <div className='center-nav'><img alt="The Bible Brief Logo" src='/bible-brief-app/biblebrief-logo.jpg'/></div>
         <div className='right-nav'></div>
       </header>
       <section>
