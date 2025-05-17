@@ -35,42 +35,104 @@ body {
 header,
 footer {
   background-color: #08250f;
-  height: 10vh;
+  height: 8vh;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer {
-  flex-flow: column nowrap;
+.left-nav, .center-nav, .right-nav {
+  display: flex;
   justify-content: center;
+  width: 10vw;
+  max-width: 33%;
+  max-height: 100%;
 }
 
-footer p:nth-of-type(1) {
-  font-weight: 600;
-  font-size: large;
-  padding: 1vh;
-  margin-top: -1vh;
+.left-nav {
+  justify-content: center;
+  width: 25vw;
 }
 
-footer p:nth-of-type(2) {
-  font-weight: 600;
-  font-size: small;
+.left-nav p {
+  transform: rotate(90deg);
 }
 
-.center-nav img {
-  aspect-ratio: 550 / 300;
-  width: 100px;
+.right-nav {
+  justify-content: center;
+  width: 25vw;
 }
 
-section {
-  background-color: white;
-  height: 100vh;
-  width: 100%;
+.right-nav img {
+  height: auto;
+  max-width: 8vw;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  filter: invert(100%);
+}
+
+.right-nav p {
+  border: 2px solid white;
+  border-radius: 20px;
 }
 
 .navbar {
   width: 100%;
   background-color: #08250f;
+}
+
+.center-nav img {
+  aspect-ratio: 550 / 300;
+  width: 18vw;
+  height: auto;
+}
+
+main {
+  background-color: white;
+  flex: 1;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: auto;
+}
+
+.card {
+  width: 80vw;
+  /* height: auto; */
+  height: 200px;
+  background-color: #114e1f;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.card-wrapper div:first-of-type {
+  margin-top: 30px;
+}
+
+.card-wrapper div:last-of-type {
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  height: 10vh;
+  padding: 1vh 0 0 0;
+}
+
+footer p:nth-of-type(1) {
+  font-weight: 600;
+  font-size: large;
+}
+
+footer p:nth-of-type(2) {
+  font-weight: 600;
+  font-size: small;
 }
