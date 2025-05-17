@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
-      <div>
-        
-      </div>
+      <section>
+        <div className='navbar'></div>
+      </section>
     </>
   )
 }
