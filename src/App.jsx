@@ -1,25 +1,14 @@
 import "./App.css";
+import { Routes, Route } from 'react-router-dom'
+import Home from "./pages/Home";
+import Newsletter from "./pages/Newsletter";
+import About from "./pages/About";
+import Header from "./Header";
 
 function App() {
   return (
     <>
-      <header>
-        <div className="left-nav">
-          <p>|||</p>
-        </div>
-        <div className="center-nav">
-          <img
-            alt="The Bible Brief Logo"
-            src="/bible-brief-app/biblebrief-logo.jpg"
-          />
-        </div>
-        <div className="right-nav">
-            <img
-              alt="The Bible Brief Logo"
-              src="/bible-brief-app/user-icon.png"
-            />
-        </div>
-      </header>
+      <Header />
       <main>
         <section className="navbar"></section>
         <section className="card-wrapper">
