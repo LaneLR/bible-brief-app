@@ -78,11 +78,6 @@ footer {
   border-radius: 20px;
 }
 
-.navbar {
-  width: 100%;
-  background-color: #08250f;
-}
-
 .center-nav img {
   aspect-ratio: 550 / 300;
   width: 18vw;
@@ -92,6 +87,11 @@ footer {
 main {
   background-color: white;
   flex: 1;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #08250f;
 }
 
 .card-wrapper {
