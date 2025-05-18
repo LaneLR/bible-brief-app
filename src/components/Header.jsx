@@ -50,6 +50,7 @@ const UserIcon = styled.img`
 
 const BurgerBar = styled.div`
   transform: rotate(90deg);
+  font-size: 1.8em;
 `;
 
 export default function Header() {
@@ -67,20 +68,5 @@ export default function Header() {
         <UserIcon alt="The Bible Brief Logo"src="/bible-brief-app/user-icon.png"/>
       </RightNav>
     </HeaderWrap>
-
-    // <HeaderWrap>
-    //   <div className="left-nav">
-    //     <p>|||</p>
-    //   </div>
-    //   <div className="center-nav">
-    //     <img
-    //       alt="The Bible Brief Logo"
-    //       src="/bible-brief-app/biblebrief-logo.jpg"
-    //     />
-    //   </div>
-    //   <div className="right-nav">
-    //     <img alt="The Bible Brief Logo" src="/bible-brief-app/user-icon.png" />
-    //   </div>
-    // </HeaderWrap>
   );
 }
