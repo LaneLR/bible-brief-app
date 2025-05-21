@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CardsWrapper from "./CardsWrapper";
 
 const Body = styled.main`
-  background-color: white;
+  background-color: beige;
   overflow-y: auto;
   flex: 1;
   min-height: 80vh;
