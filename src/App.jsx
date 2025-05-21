@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Newsletter from "./pages/Newsletter";
 import About from "./pages/About";
+import styled from "styled-components";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Body";
