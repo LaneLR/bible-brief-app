@@ -12,15 +12,20 @@ const HeaderWrap = styled.header`
 const LeftNav = styled.div`
   display: flex;
   justify-content: center;
-  width: 25vw;
-  max-width: 33%;
+  width: auto;
+  max-width: 77%;
   max-height: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bolder;
+  font-family: sans-serif;
+  padding: 0 0 0 3vw;
 `;
 
 const CenterNav = styled.div`
   display: flex;
   justify-content: center;
-  width: 10vw;
+  width: 0vw;
   max-width: 33%;
   max-height: 100%;
 `;
@@ -28,14 +33,15 @@ const CenterNav = styled.div`
 const RightNav = styled.div`
   display: flex;
   justify-content: center;
-  width: 25vw;
+  width: auto;
   max-width: 33%;
   max-height: 100%;
+  margin-right: 5vw;
 `;
 
 const Logo = styled.img`
   aspect-ratio: 550 / 300;
-  width: 18vw;
+  width: 20vw;
   height: auto;
 `;
 
@@ -50,37 +56,18 @@ const UserIcon = styled.img`
 
 const BurgerBar = styled.div`
   transform: rotate(90deg);
+  font-size: 1.8em;
 `;
 
 export default function Header() {
   return (
     <HeaderWrap>
-      <LeftNav>
-        <BurgerBar>|||</BurgerBar>
+      <LeftNav><p>Welcome back! 👋</p>
       </LeftNav>
-      <CenterNav>
-        <Logo  alt="The Bible Brief Logo"
+      <RightNav>      <Logo  alt="The Bible Brief Logo"
             src="/bible-brief-app/biblebrief-logo.jpg"
        />
-      </CenterNav>
-      <RightNav>
-        <UserIcon alt="The Bible Brief Logo"src="/bible-brief-app/user-icon.png"/>
       </RightNav>
     </HeaderWrap>
-
-    // <HeaderWrap>
-    //   <div className="left-nav">
-    //     <p>|||</p>
-    //   </div>
-    //   <div className="center-nav">
-    //     <img
-    //       alt="The Bible Brief Logo"
-    //       src="/bible-brief-app/biblebrief-logo.jpg"
-    //     />
-    //   </div>
-    //   <div className="right-nav">
-    //     <img alt="The Bible Brief Logo" src="/bible-brief-app/user-icon.png" />
-    //   </div>
-    // </HeaderWrap>
   );
 }
