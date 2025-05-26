@@ -1,17 +1,18 @@
 import styled from "styled-components";
 import CardsWrapper from "./CardsWrapper";
 
-const Body = styled.main`
-  background-color: beige;
+const Bodystyle = styled.main`
+  background-color: inherit;
   overflow-y: auto;
   flex: 1;
   min-height: 80vh;
 `;
 
-export default function Main({children}) {
+export default function Body({children}) {
   return (
-    <Body>
+    <Bodystyle>
+      {children}
       <CardsWrapper />
-    </Body>
+    </Bodystyle>
   );
 }

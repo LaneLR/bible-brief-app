@@ -6,8 +6,8 @@ export default function About() {
   return (
     <>
       <main>
-        <p>This is a test page.</p>
-        <button onClick={() => navigate("/home")}>Click to go to Home.</button>
+        <p>This is the About page.</p>
+        <button onClick={() => navigate("/")}>Click to go to Home.</button>
       </main>
     </>
   );

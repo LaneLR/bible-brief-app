@@ -5,10 +5,7 @@ export default function Newsletter() {
 
   return (
     <>
-      <main>
-        <p>This is a test page.</p>
-        <button onClick={() => navigate("/home")}>Click me to go back</button>
-      </main>
+      <p>This is the Newsletter page.</p>
     </>
   );
 }
