@@ -10,8 +10,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(175, 145, 145, 0.87);
+  background-color: rgb(255, 255, 255);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,20 +19,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
+/* html {
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
-}
-
+} */
+/* 
 body {
   background-color: #08250f;
   width: 100vw;
   height: 100vh;
-}
+} */
 
-header,
+/* header,
 footer {
   background-color: #08250f;
   height: 8vh;
@@ -40,17 +40,17 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.left-nav, .center-nav, .right-nav {
+/* .left-nav, .center-nav, .right-nav {
   display: flex;
   justify-content: center;
   width: 10vw;
   max-width: 33%;
   max-height: 100%;
-}
+} */
 
-.left-nav {
+/* .left-nav {
   justify-content: center;
   width: 25vw;
 }
@@ -104,7 +104,7 @@ main {
 
 .card {
   width: 80vw;
-  /* height: auto; */
+   height: auto; 
   height: 200px;
   background-color: #114e1f;
   margin: 10px;
@@ -117,8 +117,8 @@ main {
 
 .card-wrapper div:last-of-type {
   margin-bottom: 30px;
-}
-
+} */
+/* 
 footer {
   display: flex;
   flex-flow: column nowrap;
@@ -135,4 +135,4 @@ footer p:nth-of-type(1) {
 footer p:nth-of-type(2) {
   font-weight: 600;
   font-size: small;
-}
+} */

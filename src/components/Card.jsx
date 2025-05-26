@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const CardStyle = styled.div`
-  width: 80vw;
+  width: 85vw;
   height: 20vh;
-  background-color:rgb(45, 139, 67);
+  background-color:rgb(101, 214, 127);
   margin: 10px 0;
   border-radius: 20px;
   color: white;
