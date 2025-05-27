@@ -24,7 +24,8 @@ function App() {
     <AppWrapper>
       <Header />
       <Body>
-          <Routes>
+        <Routes>
+          <Route path="/bible-brief-app" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/newsletter" element={<Newsletter />} />
