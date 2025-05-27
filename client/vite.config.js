@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/bible-brief-app/',
   build: {
-    outDir: '../docs'
+    outDir: './docs'
   }
 })
