@@ -1,0 +1,21 @@
+import styled from "styled-components";
+import Card from "../components/Card";
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: auto;
+  height: auto;
+  color: black;
+`;
+
+export default function About() {
+  return (
+    <Wrapper>
+      <Card color="lightgreen"></Card>
+      <Card color="lavender"></Card>
+    </Wrapper>
+  );
+}
+

@@ -8,11 +8,6 @@ const Bodystyle = styled.main`
   min-height: 80vh;
 `;
 
-export default function Body({children}) {
-  return (
-    <Bodystyle>
-      {children}
-      <CardsWrapper />
-    </Bodystyle>
-  );
+export default function Body({ children }) {
+  return <Bodystyle>{children}</Bodystyle>;
 }
