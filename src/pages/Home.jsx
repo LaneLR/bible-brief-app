@@ -1,9 +1,0 @@
-import { useNavigate } from "react-router-dom";
-
-export default function Home() {
-  return (
-    <>
-      <p>This is the Home page.</p>
-    </>
-  );
-}

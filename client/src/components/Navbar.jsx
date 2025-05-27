@@ -39,7 +39,7 @@ const Icon = styled.img`
 export default function Navbar() {
   return (
     <Wrap>
-      <Link to="/">
+      <Link to="/bible-brief-app">
         <Icon alt="Home Icon" src="/bible-brief-app/home-icon.png" />
       </Link>
       <Link to="/search">

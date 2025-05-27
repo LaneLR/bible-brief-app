@@ -1,5 +1,5 @@
+import Card from "../components/Card";
 import styled from "styled-components";
-import Card from "./Card";
 
 const Wrapper = styled.div`
   display: flex;
@@ -10,11 +10,11 @@ const Wrapper = styled.div`
   color: black;
 `;
 
-export default function SearchBody() {
+export default function Profile() {
   return (
     <Wrapper>
-      <Card></Card>
-      <Card></Card>
+      <Card color="green"></Card>
+      <Card color="red"></Card>
     </Wrapper>
   );
 }

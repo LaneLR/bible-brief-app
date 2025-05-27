@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CardStyle = styled.div`
   width: 85vw;
   height: 20vh;
-  background-color:rgb(101, 214, 127);
+  background-color:${(props) => props.color};
   margin: 10px 0;
   border-radius: 20px;
   color: white;
@@ -13,9 +13,9 @@ const CardStyle = styled.div`
 `;
 
 
-export default function Card({children}) {
+export default function Card({children, color}) {
   return (
-    <CardStyle>{children}</CardStyle>
+    <CardStyle color={color}>{children}</CardStyle>
   );
 }
 
