@@ -16,10 +16,6 @@ const CardStyle = styled.div`
   font-size: 1.25rem;
   font-weight: 450;
   font-family: inherit;
-
-  &:last-child {
-  margin-botton: 50px;
-  }
 `;
 
 const FlexWrapper = styled.div`
@@ -37,6 +33,9 @@ const UserLikes = styled.div`
   height: 50px;
   width: 100%;
   padding: 3% 7% 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 `;
 
 const User = styled.div`
@@ -44,6 +43,9 @@ const User = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 `;
 
 const Likes = styled.img`
@@ -53,6 +55,9 @@ const Likes = styled.img`
   height: 23px;
   width: 25px;
   margin: 5px 8px 5px 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 `;
 
 const PrayerContent = styled.div`
@@ -71,6 +76,9 @@ const LikesNumbers = styled.div`
   align-items: flex-start;
   width: auto;
   filter: invert(50%);
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 `;
 
 const AmenButton = styled.button`
@@ -87,6 +95,9 @@ const AmenButton = styled.button`
   font-weight: 600;
   font-size: 1.4rem;
   color: rgb(240, 240, 240);
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   &:active {
     background-color: rgb(121, 100, 238);
@@ -97,10 +108,6 @@ const AmenButton = styled.button`
 export default function PrayerWallPost({ children }) {
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
-
-  function handleChange(e) {
-    setText(e.target.value);
-  }
 
   return (
     <>
