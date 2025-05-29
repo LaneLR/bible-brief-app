@@ -6,7 +6,7 @@ const Wrap = styled.footer`
   bottom: -1px;
   left: 0;
   width: 100%;
-  height: 6.5vh;
+  height: 7vh;
   background-color: #08250f;
   color: white;
   display: flex;
@@ -14,49 +14,68 @@ const Wrap = styled.footer`
   justify-content: space-around;
   align-items: center;
   z-index: 10;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 3px;
-  
-  a, button, img {
-  -webkit-tap-highlight-color: transparent; 
-  -webkit-focus-ring-color: transparent;   
-  outline: none;                            
-}
+  padding: 0 5px 3px 5px;
+
+  a,
+  button,
+  img {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    outline: none;
+  }
 `;
 
+const StyledLink = styled(Link)`
+  &:nth-of-type(1) img{
+    height: 45px;
+    width: 45px;
+  }
+      &:nth-of-type(2) img{
+    height: 45px;
+    width: 45px;
+  }
+      &:nth-of-type(3) img{
+    height: 60px;
+    width: 60px;
+  }
+      &:nth-of-type(4) img{
+    height: 50px;
+    width: 50px;
+  }
+      &:nth-of-type(5) img{
+    height: 50px;
+    width: 50px;
+  }
+`
+
 const Icon = styled.img`
-  max-height: 50px;
-  max-width: 50px;
+  max-height: 100px;
+  max-width: 100px;
   filter: invert(100%);
   margin-top: 7px;
-
-  &:nth-of-type(1) {
-    padding: 5px;
-  }
 `;
 
 export default function Navbar() {
   return (
     <Wrap>
-      <Link to="/bible-brief-app">
+      <StyledLink to="/bible-brief-app">
         <Icon alt="Home Icon" src="/bible-brief-app/home-icon.png" />
-      </Link>
-      <Link to="/search">
+      </StyledLink>
+      <StyledLink to="/search">
         <Icon alt="Search Icon" src="/bible-brief-app/search-icon.png" />
-      </Link>
-      <Link to="/newsletter">
+      </StyledLink>
+      <StyledLink to="/newsletter">
         <Icon
           alt="Newsletter Icon"
           src="/bible-brief-app/newsletter-icon.png"
         />
-      </Link>
-      <Link to="/group">
+      </StyledLink>
+      <StyledLink to="/prayerwall">
         <Icon alt="Group Icon" src="/bible-brief-app/community-icon.png" />
-      </Link>
-      <Link to="/profile">
+      </StyledLink>
+      <StyledLink to="/profile">
         <Icon alt="User Icon" src="/bible-brief-app/usernav-icon.png" />
-      </Link>
+      </StyledLink>
     </Wrap>
   );
 }

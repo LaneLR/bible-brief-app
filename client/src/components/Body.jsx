@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import CardsWrapper from "./CardsWrapper";
 
 const Bodystyle = styled.main`
   background-color: inherit;
