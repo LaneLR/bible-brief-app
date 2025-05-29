@@ -70,7 +70,7 @@ export default function Navbar() {
           src="/bible-brief-app/newsletter-icon.png"
         />
       </StyledLink>
-      <StyledLink to="/group">
+      <StyledLink to="/prayerwall">
         <Icon alt="Group Icon" src="/bible-brief-app/community-icon.png" />
       </StyledLink>
       <StyledLink to="/profile">
