@@ -274,24 +274,26 @@ Error generating stack: `+l.message+`
   }
 `,uu=pt(Lr)`
   &:nth-of-type(1) img{
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
+    padding: 3px;
   }
       &:nth-of-type(2) img{
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+  }
+      &:nth-of-type(3) img{
+    height: 55px;
+    width: 55px;
+  }
+      &:nth-of-type(4) img{
     height: 45px;
     width: 45px;
   }
-      &:nth-of-type(3) img{
-    height: 60px;
-    width: 60px;
-  }
-      &:nth-of-type(4) img{
-    height: 50px;
-    width: 50px;
-  }
       &:nth-of-type(5) img{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
   }
 `,iu=pt.img`
   max-height: 100px;
