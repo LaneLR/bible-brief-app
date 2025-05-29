@@ -98,10 +98,6 @@ export default function PrayerWallPost({ children }) {
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
 
-  function handleChange(e) {
-    setText(e.target.value);
-  }
-
   return (
     <>
       <CardStyle>
