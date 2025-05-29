@@ -29,18 +29,27 @@ const PostWrapper = styled.div`
 `;
 
 const PrayerForm = styled.form`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: column nowrap;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+`;
 
 const PrayerSubmitButton = styled.button`
-width: 80%;
-height: 3vh;
-background-color: #5850ec;
-border: none;
-`
+  width: 80%;
+  max-height: 4vh;
+  padding: 3px;
+  border-radius: 6px;
+  background-color: #5850ec;
+  border: none;
+  font-size: 1.1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+`;
 
 export default function PrayerWall() {
   const [text, setText] = useState("");
