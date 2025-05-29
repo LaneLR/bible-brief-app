@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Newsletter from "./pages/Newsletter";
 import About from "./pages/About";
-import Group from "./pages/Group";
+import PrayerWall from "./pages/PrayerWall";
 import styled from "styled-components";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -17,6 +17,8 @@ const AppWrapper = styled.div`
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
 `;
 
 function App() {
@@ -28,7 +30,7 @@ function App() {
           <Route path="/bible-brief-app" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/newsletter" element={<Newsletter />} />
-          <Route path="/group" element={<Group />} />
+          <Route path="/prayerwall" element={<PrayerWall />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </Body>
