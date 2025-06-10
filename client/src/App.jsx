@@ -24,8 +24,8 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
-      <Header />
       <Body>
+        <Header />
         <Routes>
           <Route path="/bible-brief-app" element={<Home />} />
           <Route path="/search" element={<Search />} />
@@ -33,8 +33,9 @@ function App() {
           <Route path="/prayerwall" element={<PrayerWall />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
+        <Navbar />
       </Body>
-      <Navbar />
+      
     </AppWrapper>
   );
 }

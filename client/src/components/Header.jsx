@@ -34,6 +34,13 @@ const LeftNav = styled.div`
 //   max-height: 100%;
 // `;
 
+// const UpperBackground = styled.div`
+//  background-color: #08250f;
+//  width:100%;
+//  height: 100px;
+//  margin-top: -50px;
+// `
+
 const RightNav = styled.div`
   display: flex;
   justify-content: center;
@@ -64,6 +71,7 @@ const Logo = styled.img`
 
 export default function Header() {
   return (
+    <>
     <HeaderWrap>
       <LeftNav><p>Welcome back! 👋</p>
       </LeftNav>
@@ -74,8 +82,8 @@ export default function Header() {
           src="/bible-brief-app/bbicon.png"
        />
         </LogoWrapper> 
-
       </RightNav>
     </HeaderWrap>
+    </>
   );
 }

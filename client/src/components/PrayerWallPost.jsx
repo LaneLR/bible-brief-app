@@ -127,7 +127,7 @@ export default function PrayerWallPost({ children }) {
           <PrayerContent>{children}</PrayerContent>
         </FlexWrapper>
 
-        <AmenButton onClick={() => setLikes(likes + 1)}>AMEN!</AmenButton>
+        <AmenButton onClick={() => setLikes(likes + 1)}>Like</AmenButton>
       </CardStyle>
     </>
   );
