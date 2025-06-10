@@ -69,9 +69,9 @@ export default function PrayerWall() {
         <PrayerTextarea
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Type your prayer here..."
+          placeholder="Type your comment here..."
         />
-        <PrayerSubmitButton type="submit">Post Prayer</PrayerSubmitButton>
+        <PrayerSubmitButton type="submit">Post Comment</PrayerSubmitButton>
       </PrayerForm>
       {prayers.map((prayer, index) => (
         <PostWrapper key={index}>
